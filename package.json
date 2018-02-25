@@ -1,0 +1,19 @@
+{
+  "name": "testnubipts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitaliy-1000/testNubipTS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vitaliy-1000/testNubipTS/issues"
+  },
+  "homepage": "https://github.com/Vitaliy-1000/testNubipTS#readme"
+}
