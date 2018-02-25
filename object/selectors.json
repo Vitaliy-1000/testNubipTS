@@ -1,0 +1,18 @@
+{
+    "loginPage":{
+        "menuPanel":".navbar.navbar-inverse",
+        "inputName":"#formHorizontalEmail",
+        "loginButton":".btn.btn-default"
+    },
+    
+    "userPage":{
+        "menuPanel":".navbar-header",
+        "buttons":{
+            "informEnterData":".btn.btn-warning",
+            "adding":".btn.btn-primary",
+            "calcuricFarm":".btn.btn-default"
+        },
+        "inputByCalculation":".form-control",
+        "checkboxes":".checkbox-inline"
+    }
+}
