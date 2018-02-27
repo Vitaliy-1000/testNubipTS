@@ -26,9 +26,10 @@ describe('testCase by NubipProject', function() {
     it('go to userPage', async function() {
       // login button
       await loginForm.loginGo(userded);
+ //  await browser.
       expect (await userPage.userUrl()).to.eql(userPage.userURL)
-      //expect (await userPage.areDisplayed(user)).to.eql(true)
-
+      expect (await userPage.areDisplayed(user)).to.eql(true)
+      
       // recording by farm
 
 

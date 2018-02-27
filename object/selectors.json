@@ -7,11 +7,9 @@
     
     "user":{
         "menuPanel":".navbar-header",
-        "buttons":{
-            "informEnterData":".btn.btn-warning",
-            "adding":".btn.btn-primary",
-            "calculationingFarm":".btn.btn-default"
-        },
+        "informEnterData":".btn.btn-warning",
+        "adding":".btn.btn-primary",
+        "calculationingFarm":".btn.btn-default",
         "inputByCalculation":".form-control",
         "checkboxes":".checkbox-inline"
     }

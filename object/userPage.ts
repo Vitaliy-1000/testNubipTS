@@ -31,17 +31,12 @@ export class UserPage {
     }   
 
     async userUrl() {
-       return await browser.getCurrentUrl()
+        return await browser.getCurrentUrl()
     }
 
     async areDisplayed(selectors) {
         for (let key in selectors) { //перебирання значень якостей об'єкта
-        await console.log(selectors[key])
-        let rep = await $(selectors[key])
-        await console.log(rep)    
         let check = await $(selectors[key]).isDisplayed() //перевірка елемента по селектору, наявність на сторінці
-        
-            await console.log(rep)
             if(check == false) {
                 return false;
             }
