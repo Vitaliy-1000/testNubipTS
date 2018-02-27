@@ -18,7 +18,6 @@ describe('testCase by NubipProject', function() {
     it('loginPage', async function() {
       await browser.get('http://localhost:3000');
       expect (await loginForm.url()).to.eql('http://localhost:3000/')
-      //expect (await loginForm.menuPanel.isDisplayed()).to.eql(true)
       expect (await loginForm.areDisplyed(login)).to.eql(true)
     });
   });

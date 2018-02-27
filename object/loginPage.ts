@@ -22,12 +22,10 @@ export class LoginForm {
     }
 
     async areDisplyed(selectors) {
-        let isSelectors = true;
-        for (let key in selectors) {
-            let check = await $(selectors[key]).isDisplayed()
+        for (let key in selectors) { //перебирання значень якостей об'єкта
+            let check = await $(selectors[key]).isDisplayed() //перевірка елемента по селектору, наявність на сторінці
             if(check == false) {
-                await console.log(check)
-                return isSelectors = false;
+                return false;
             }
             return true
         }      
