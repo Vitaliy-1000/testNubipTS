@@ -10,7 +10,7 @@
         "buttons":{
             "informEnterData":".btn.btn-warning",
             "adding":".btn.btn-primary",
-            "calcuricFarm":".btn.btn-default"
+            "calculationingFarm":".btn.btn-default"
         },
         "inputByCalculation":".form-control",
         "checkboxes":".checkbox-inline"

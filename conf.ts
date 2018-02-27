@@ -1,5 +1,5 @@
 import{Config, browser} from "protractor";
-//const { Config} = require('protractor') 
+//const { Config, browser} = require('protractor') 
 
 
 const config : Config = {
@@ -14,4 +14,4 @@ const config : Config = {
 
   };
 
-  exports.config = config;
+exports.config = config;
