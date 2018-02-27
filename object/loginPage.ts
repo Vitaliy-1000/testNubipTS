@@ -27,11 +27,12 @@ export class LoginForm {
             if(check == false) {
                 return false;
             }
-            return true
-        }      
+        }   
+        return true   
     }
 
     async loginGo(user: userName) {
+        await browser.get('http://localhost:3000');
         await this.loginName.sendKeys(user.userName);
         await this.loginButton.click();
     }

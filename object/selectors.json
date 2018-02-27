@@ -1,11 +1,11 @@
 {
-    "loginPage":{
+    "login":{
         "menuPanel":".navbar.navbar-inverse",
         "inputName":"#formHorizontalEmail",
         "loginButton":".btn.btn-default"
     },
     
-    "userPage":{
+    "user":{
         "menuPanel":".navbar-header",
         "buttons":{
             "informEnterData":".btn.btn-warning",
