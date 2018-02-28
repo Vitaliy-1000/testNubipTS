@@ -1,4 +1,4 @@
-import {element, $, $$, browser} from 'protractor';
+import {by, element, $, $$, browser, ExpectedConditions, protractor} from 'protractor';
 import { userInfo } from 'os';
 import { ElementFinder, ElementArrayFinder} from 'protractor/built/element';
 
@@ -16,7 +16,7 @@ export class UserPage {
     informEnterData: ElementFinder;
     adding: ElementFinder;
     calculationingFarm: ElementArrayFinder;
-    inputByCalculation: ElementArrayFinder;
+    inputForCalculation: ElementArrayFinder;
     checkboxes: ElementArrayFinder;
     userURL: string;
     constructor() {
@@ -24,7 +24,7 @@ export class UserPage {
         this.informEnterData = $('.btn.btn-warning')
         this.adding = $('.btn.btn-primary')
         this.calculationingFarm = $$('.btn.btn-default')
-        this.inputByCalculation = $$('.form-control')
+        this.inputForCalculation = $$('.form-control')
         this.checkboxes = $$('.checkbox-inline')
 
         this.userURL = 'http://localhost:3000/entries'
@@ -42,5 +42,13 @@ export class UserPage {
             }
         } 
         return true     
+    }
+
+    async dataCalculation(obj, objJson) {
+    const keys = Object.keys(objJson) 
+        for(let key in keys) {
+            let namePropData = await keys[key];
+            let elemDataInput = await $$(obj).get(+key).sendKeys(objJson[namePropData])
+        }
     }
 }

@@ -10,7 +10,15 @@
         "informEnterData":".btn.btn-warning",
         "adding":".btn.btn-primary",
         "calculationingFarm":".btn.btn-default",
-        "inputByCalculation":".form-control",
+        "inputForCalculation":".form-control",
         "checkboxes":".checkbox-inline"
+    },
+
+    "dataForCalculation":{
+        "pariod": "365",
+        "numberCows": "100",
+        "priceBy": "30",
+        "priceByEnergy": "5",
+        "salary": "50"
     }
 }
