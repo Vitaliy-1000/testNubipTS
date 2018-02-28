@@ -51,4 +51,12 @@ export class UserPage {
             let elemDataInput = await $$(obj).get(+key).sendKeys(objJson[namePropData])
         }
     }
+
+    async clickCheckbox(clickObject) {
+        const objectsCheck = await Object.keys(await $$(clickObject));
+        const checkboxes = await objectsCheck.length;  
+        const randomNumber = await Math.floor(Math.random() * checkboxes)
+        await $$(clickObject).get(randomNumber).click()
+    }
+
 }
